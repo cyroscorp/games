@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --bg-image: url('./assets/a.png') /* Use the same path here */
+}
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image:url('./assets/z.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+
+
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+/* Main content adjustments */
+main {
+  background-image: url('./assets/z.png');
+}
+
+
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    margin-top: 12px;
+  }
+  .main-content {
+    padding: 24px;
+  }
+}
